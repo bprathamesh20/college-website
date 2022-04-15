@@ -232,15 +232,23 @@ svg {
   text-align: center;
   font-size: 1.5rem;
   margin: 1rem;
-
+color: #fff;
+    background-color: #3897d3;
   height: 30vh;
-  border: 2px solid #999;
-  bodeer-radius: 8px;
+  padding: 1rem;
+  border-radius: 8px;
   width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 1sec ease-in-out;
+}
+
+.dep-card:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .anc {
@@ -372,6 +380,7 @@ svg {
   margin-bottom: 3rem;
   margin-top: 3rem;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 .discrip {
@@ -392,6 +401,7 @@ svg {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   margin-top: 2rem;
+  margin-bottom
 
 
 }
@@ -561,8 +571,7 @@ svg {
   align-items: center;
   align-content: center;
   justify-content: center;
-
-
+  background-color: #EBECED;
 }
 
 .g-img {
@@ -610,4 +619,120 @@ footer {
 
   position: absolute;
 
+}
+
+.departments{
+  background-color:#EBECED;
+}
+
+.dep-show{
+  margin: 5rem 0rem 8rem 0rem;
+ 
+  text-align: center;
+}
+
+
+.viewall-btn{
+    color: #fff;
+    background-color: #3897d3;
+    border-radius: 4px;
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+    width: 10%;
+    
+    
+
+}
+
+.departments-sm{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 2rem 0rem;
+ 
+   
+}
+
+.d-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+.d-main{
+  width: 60%;
+  padding: 2rem;
+  
+}
+
+.d-sidebar{
+  width: 30%;
+  padding: 2rem;
+}
+
+.f-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 0rem;
+  
+}
+
+
+.f-img{
+  height: 50px;
+  width: 50px;
+}
+
+
+.d-head{
+  color: #3897d3;
+  font-size: 1.5rem;
+  
+  
+}
+
+
+.d-para, li{
+  font-size: 1rem;
+  margin-top: 1.6rem;
+  /*   letter-spacing: 0.1rem; */
+  line-height: 1.6rem;
+   margin-bottom: 2rem;
+  
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 2rem;
 }
